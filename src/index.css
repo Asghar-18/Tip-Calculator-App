@@ -1,13 +1,167 @@
+
 body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-logo {
+  /* display: flex; */
+  display: block;
+  margin: 0px auto 50px auto;
+ 
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 530px;
+  height: 250px;
+}
+
+.bill-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 10px;
+  color: #00474b;
+}
+.input-container {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.input-container img {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  transform: translateY(-50%);
+  height: 12px;
+}
+
+input:not(.button-custom) {
+  display: block;
+  width: 100%;
+  margin: 5px 0px;
+  height: 60%;
+  background-color: #f3f8fb;
+  border-radius: 5px;
+  border: 1px solid #f3f8fb;
+  text-align: right;
+  
+}
+input:focus{
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.tip-buttons {
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  gap: 10px 10px;
+  margin-top: 5px;
+  grid-template-rows: 30px 30px;
+}
+
+button{
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  background-color: #00474b;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: #00474b;
+}
+input[type=number].button-custom::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+  background-color: #f3f8fb;
+  color: #00474b;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  border: 0px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  margin: 0; 
+  text-align: right;
+}
+.button-custom::placeholder{
+  text-align: center;
+}
+
+.button-custom:hover {
+  background-color: #f3f8fb; /* Ensure this stays unchanged on hover */
+  color: #00474b;
+  border: 0px;
+}
+
+.result-section {
+  background-color: #00474b;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
+}
+
+.result-section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -10px 10px;
+}
+
+span {
+  font-size: 7px;
+  color: #819b94;
+  display: block;
+  font-weight: 700;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+h2 {
+  font-size: 24px;
+  color: hsl(172, 67%, 45%);
+}
+
+.reset-button {
+  color: #00474b;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border: 10px;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+  margin-top: 50px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
